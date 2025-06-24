@@ -105,7 +105,7 @@
             </header>
             <ul class="actions stacked">
                 <li><a href="#" class="button fit primary">Get Started</a></li>
-                <li><a href="#one" class="button fit">Explore Features</a></li>
+                <li><a href="#one" class="button fit">Features</a></li>
             </ul>
         </div>
     </section>
