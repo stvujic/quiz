@@ -17,7 +17,7 @@
                 </li>
                 <li class="icon solid fa-users-cog">
                     <h3>Manage Users</h3>
-                    <p><a href="#">View Registered Users</a></p>
+                    <a href="{{ route('admin.users.index') }}">View Registered Users</a>
                 </li>
             </ul>
         </div>
