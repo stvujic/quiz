@@ -11,8 +11,8 @@
             <p>Your go-to platform to sharpen your backend skills and<br />
                 confidently prepare for developer interviews.</p>
             <ul class="actions special">
-                <li><a href="#" class="button primary">Login</a></li>
-                <li><a href="#" class="button primary">Register</a></li>
+                <li><a href="{{ route('login') }}" class="button primary">Login</a></li>
+                <li><a href="{{ route('register') }}" class="button primary">Register</a></li>
             </ul>
         </div>
         <a href="#one" class="more scrolly">Learn More</a>

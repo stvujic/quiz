@@ -22,6 +22,17 @@
         <h1><a href="{{ url('/') }}">Laravel/PHP Quiz</a></h1>
         <nav id="nav">
             <ul>
+                @auth
+                    <li>
+                        <form method="POST" action="{{ route('logout') }}" style="display:inline;">
+                            @csrf
+                            <button type="submit" style="background:none; border:none; color:white; cursor:pointer; font-weight:bold;">
+                                Logout
+                            </button>
+                        </form>
+                    </li>
+                @endauth
+
                 <li class="special">
                     <a href="#menu" class="menuToggle"><span>Menu</span></a>
                     <div id="menu">
@@ -30,8 +41,8 @@
                             <li><a href="#">Tests</a></li>
                             <li><a href="#">Suggest questions</a></li>
                             <li><a href="#">Elements</a></li>
-                            <li><a href="#">Sign Up</a></li>
-                            <li><a href="#">Log In</a></li>
+                            <li><a href="{{ route('register') }}">Sign Up</a></li>
+                            <li><a href="{{ route('login') }}">Log In</a></li>
                             <li><a href="#">Contact Us</a></li>
                         </ul>
                     </div>
@@ -39,6 +50,7 @@
             </ul>
         </nav>
     </header>
+
 
     {{-- Ovo je mesto gde će svaka stranica ubaciti svoj sadržaj --}}
     @yield('content')
