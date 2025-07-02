@@ -5,6 +5,8 @@
 @section('content')
     <section class="wrapper style1 special">
         <div class="inner">
+            <a href="{{ route('admin.dashboard') }}" class="button small" style="margin-bottom: 1rem; display: inline-block;">&larr; Back to Dashboard</a>
+
             <header class="major" style="display: flex; justify-content: space-between; align-items: center;">
                 <h2 style="margin: 0;">All Registered Users</h2>
                 <a href="{{ route('admin.users.create') }}" class="button primary small">+ Add New User</a>
