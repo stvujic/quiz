@@ -13,7 +13,7 @@
             <ul class="features">
                 <li class="icon solid fa-question-circle">
                     <h3>Manage Questions</h3>
-                    <p><a href="#">View / Add / Edit Questions</a></p>
+                    <a href="{{ route('admin.questions.index') }}">View / Add / Edit Questions</a>
                 </li>
                 <li class="icon solid fa-users-cog">
                     <h3>Manage Users</h3>
